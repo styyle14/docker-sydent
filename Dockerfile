@@ -49,7 +49,7 @@ RUN \
 
 USER "${username}"
 VOLUME ["/home/${username}/config"]
-WORKDIR "/home/${username}/"
+WORKDIR "/home/${username}/config"
 EXPOSE 8090
 CMD python -B -m sydent.sydent
 
